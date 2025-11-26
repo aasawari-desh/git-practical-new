@@ -28,6 +28,7 @@ phases:
       - aws ec2 describe-instances
       - echo Build phase ended on `date`
       - aws s3 ls
+      - echo Build phase ended
     finally:
       - echo This always runs even if the build command fails
   post_build:
